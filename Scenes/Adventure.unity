@@ -428,7 +428,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1257912659}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1018592125}
@@ -451,6 +451,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nodeNetworkView: {fileID: 1257912663}
+  playerFigurinePrefab: {fileID: 1756832176461634, guid: a98914bcb31d249ecb7012408cdaaeb6,
+    type: 2}
 --- !u!114 &1257912662
 MonoBehaviour:
   m_ObjectHideFlags: 0

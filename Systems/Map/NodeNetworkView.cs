@@ -6,7 +6,7 @@ public class NodeNetworkView : MonoBehaviour {
     [SerializeField] GameObject nodeRowPrefab;
     [SerializeField] GameObject nodePrefab;
 
-    public List<List<NetworkNode>> GenerateNodeNetwork(Map map) {
+    public List<List<NetworkNode>> GenerateNodeNetwork(Map map, NodeNetworkController controller) {
         List<List<NetworkNode>> fullNetwork = new List<List<NetworkNode>>();
 
         //Actualize Map to GameObjects
@@ -20,7 +20,7 @@ public class NodeNetworkView : MonoBehaviour {
                 row_node.transform.SetParent(node_row.transform, false);
 
                 NetworkNode networkNode = row_node.GetComponent<NetworkNode>();
-                networkNode.Init(map.NodeRows[i].Nodes[k]);
+                networkNode.Init(map.NodeRows[i].Nodes[k], controller);
                 networkRow.Add(networkNode);
             }
             fullNetwork.Add(networkRow);
