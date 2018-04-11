@@ -24,6 +24,7 @@ public class NodeNetworkController : MonoBehaviour {
         if (playerFigurine.CurrentNode.HasExitTo(node)) {
             MovePlayerFigurine(node);
         }
+        PanelManager.DisplayEventPanel();
     }
 
     private void CreateNodeLinks() {

@@ -24,22 +24,14 @@ public class CharacterSheet : MonoBehaviour {
     public int Intellect    { get { return base_attribute_dict[(int)Intellect]; } }
     public int Charisma     { get { return base_attribute_dict[(int)Charisma]; } }
 
-    //Card Album (Skill Book)
-    private List<Card> cardAlbum;
-
     //Equipment & Items
     private InventoryManager inventoryManager;
 
-    //Card Hand
-    private List<Card> playerHand;
+    //Peeple Pool
+
+    //Peeple Hand
 
     //Buffs and Effects
-
-    //Ally Characters
-    private List<BattleCharacter> allyCharacters;
-
-    //Battle Character
-    private BattleCharacter myBattleCharacter;
 
     private void Start() {
         InitBaseAttributeDictionary();
